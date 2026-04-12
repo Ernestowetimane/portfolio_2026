@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             percentage++;
             loadingPercentage.innerText = `${percentage}%`;
-            loadingScreen.style.background = `linear-gradient(to bottom, var(--blue) ${percentage}%, var(--black) ${percentage}%)`;
+            loadingScreen.style.background = `linear-gradient(to bottom, var(--black) ${percentage}%, var(--blue) ${percentage}%)`;
         }
     }, 10); 
 });
