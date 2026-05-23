@@ -100,6 +100,21 @@
         font-size: 2rem;
     }
 
+    .skills-info {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .card-tech {
+        width: 100px;
+        height: 100px;
+    }
+
     /*Services, Testimonial*/
     #services, #testimonial {
         width: 92%;
@@ -316,7 +331,7 @@
     /*Skills*/
     .skills {
         display: flex;
-        width: 95%;
+        width: 100%;
         max-width: 1920px;
         height: calc(100vh - 90px);
         align-items: center;
@@ -341,14 +356,24 @@
         font-size: 2rem;
     }
 
-    .skills-headline, .skills-info {
+    .skills-headline {
         width: 47%;
-        height: 50vh;
+        height: auto;
+    }
+
+    .skills-info {
+        width: 47%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: center;
+        justify-items: center;
     }
 
     .card-tech {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
 
     /*Services, Testimonial*/
@@ -447,5 +472,58 @@
 
     .text-contact h1 {
         font-size: 2.5rem;
+    }
+}
+
+/* Estilos para mobile */
+@media (max-width: 767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Skills Mobile*/
+    .skills {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .container-skills {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .skills-headline {
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-info {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .card-tech {
+        width: 90px;
+        height: 100px;
+    }
+
+    .card-tech p {
+        font-size: 0.75rem;
+    }
+
+    .card-tech img {
+        width: 50%;
     }
 }

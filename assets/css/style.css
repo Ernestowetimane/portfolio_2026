@@ -499,7 +499,7 @@ body {
 
 .skills-headline span {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
@@ -555,8 +555,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding: 1rem 0rem 0 3rem;
-    margin-bottom: 50px;
+
 }
 
 @keyframes spinAndLift {
