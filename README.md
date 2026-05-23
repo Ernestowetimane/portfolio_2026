@@ -1,6 +1,6 @@
 
 
-Este repositório contém o código-fonte do meu site pessoal de portfólio, a RM Developer. É uma vitrine digital onde apresento minhas habilidades e projetos como desenvolvedor web. O site demonstra minha abordagem ao desenvolvimento web, focando em design responsivo, interatividade e experiências de usuário otimizadas.
+Este repositório contém o código-fonte do meu site pessoal de portfólio, Ernesto Dev. É uma vitrine digital onde apresento minhas habilidades e projetos como desenvolvedor web. O site demonstra minha abordagem ao desenvolvimento web, focando em design responsivo, interatividade e experiências de usuário otimizadas.
 
 ## Tecnologias e Ferramentas
 
@@ -11,7 +11,7 @@ O site foi construído utilizando uma variedade de tecnologias e ferramentas mod
 - **AOS (Animate On Scroll)**: Para animações elegantes ao rolar a página.
 - **Particles.js**: Para efeitos visuais interativos em algumas seções do site.
 - **FontAwesome**: Ícones estilizados e de fácil implementação.
-- **EmailJS**: Integrado para facilitar o envio de emails diretamente do site.
+
 
 ## Características do Site
 
