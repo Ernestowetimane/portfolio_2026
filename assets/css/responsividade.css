@@ -461,6 +461,51 @@
         align-items: center;
     }
 
+    /*About Mobile*/
+    .about {
+        padding: 2rem 0 1rem;
+        min-height: auto;
+    }
+
+    .container-about {
+        padding: 0 1.2rem;
+    }
+
+    .content-about {
+        gap: 1.5rem;
+    }
+
+    .content-about-left h1 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .content-about-left p {
+        font-size: 1rem;
+        line-height: 1.7;
+        padding-top: 1rem;
+    }
+
+    .cta-about {
+        padding-top: 1.5rem;
+        gap: 1.2rem;
+    }
+
+    .about-social {
+        padding-top: 0;
+        gap: 1rem;
+    }
+
+    .about-social a {
+        font-size: 1.3rem;
+    }
+
+    .img-about img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
     /*Skills Mobile*/
     .skills {
         width: 100%;
