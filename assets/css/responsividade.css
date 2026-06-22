@@ -145,18 +145,40 @@
         align-items: center;
     }
 
-    /*Projetos*/
+    /*Projetos - Editorial*/
     .projects {
-        width: 92%;
-        height: auto;
+        padding: 4rem 0 3rem;
     }
 
-    .cards-projects {
-        width: 100%;
-        display: grid;
+    .container-projects {
+        padding: 0 1.5rem;
+        gap: 2.5rem;
+    }
+
+    .projects-title {
+        font-size: clamp(2rem, 4.5vw, 3rem);
+    }
+
+    .project-featured {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .project-featured-img {
+        min-height: 280px;
+    }
+
+    .project-featured-info {
+        padding: 2rem;
+    }
+
+    .project-name {
+        font-size: 1.8rem;
+    }
+
+    .projects-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        justify-content: center;
+        gap: 1.2rem;
     }
 
     /*Contact - Editorial*/
@@ -400,23 +422,21 @@
         padding: 0rem;
     }
 
-    /*Projetos*/
+    /*Projetos - Editorial*/
     .projects {
-        width: 95%;
-        height: auto;
+        padding: 6rem 0 4rem;
     }
 
-    .cards-projects {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5rem; 
-        justify-items: center; 
+    .container-projects {
+        padding: 0 2rem;
     }
 
-    .card-project {
-        max-width: 420px; 
-        width: 100%; 
+    .projects-grid {
+        gap: 1.5rem;
+    }
+
+    .project-card-img {
+        height: 250px;
     }
 
     /*Contact - Editorial*/
@@ -483,6 +503,46 @@
 
     .card-tech img {
         width: 50%;
+    }
+
+    /*Projetos - Editorial Mobile*/
+    .projects {
+        padding: 3rem 0 2rem;
+        min-height: auto;
+    }
+
+    .container-projects {
+        padding: 0 1.2rem;
+        gap: 2rem;
+    }
+
+    .projects-title {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+
+    .project-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .project-featured-img {
+        min-height: 220px;
+    }
+
+    .project-featured-info {
+        padding: 1.5rem;
+    }
+
+    .project-name {
+        font-size: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .project-card-img {
+        height: 200px;
     }
 
     /*Contact - Editorial Mobile*/

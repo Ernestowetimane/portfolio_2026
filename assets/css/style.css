@@ -732,145 +732,235 @@ body {
 
 
 
-/* PROJECTS */
+/* PROJECTS — Editorial */
 .projects {
     width: 100%;
-    height: auto;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
+    justify-content: center;
+    padding: 6rem 0 4rem;
 }
 
 .container-projects {
-    width: 95%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    gap: 3rem;
 }
 
-.content-projects {
-    width: 100%;
+/* Headline editorial */
+.projects-headline {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-/* Container dos cards */
-.cards-projects {
+.projects-label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.projects-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.05;
+    color: var(--white);
+    letter-spacing: -0.02em;
+}
+
+/* Projeto Featured */
+.project-featured {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    justify-content: center;
-}
-
-/* Card individual */
-.card-project {
-    background-color: #151515;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 3rem;
+    background-color: #111111;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.card-project:hover {
-    transform: translateY(-5px);
+.project-featured:hover {
+    transform: translateY(-4px);
 }
 
-/* Imagem do projeto */
-.img-project {
-    background-color: var(--black);
-    border-radius: 10px;
+.project-featured-img {
+    position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 380px;
     overflow: hidden;
 }
 
-.img-project img {
+.project-featured-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Conteúdo do card */
-.content-card {
-    width: 100%;
+.project-featured:hover .project-featured-img img {
+    transform: scale(1.05);
+}
+
+.project-featured-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
+    justify-content: center;
+    padding: 2.5rem 2.5rem 2.5rem 0;
+    gap: 0.8rem;
 }
 
-/* Texto do projeto */
-.text-project {
-    width: 100%;
-    text-align: left;
-}
-
-.text-project h2 {
-    font-size: 1.5rem;
+/* Info compartilhada */
+.project-type {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.7rem;
     font-weight: 500;
-    margin: 1rem 0 0.5rem;
-}
-
-.text-project span {
-    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     color: var(--blue);
-    font-weight: 400;
-    display: block;
-    margin-bottom: 0.5rem;
-   
 }
 
-.text-project p {
+.project-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.1;
+}
+
+.project-desc {
     font-size: 1rem;
-    font-weight: normal;
-    line-height: 1.50rem;
+    line-height: 1.7;
     color: var(--gray);
-    margin-bottom: 1rem;
+    font-weight: 300;
 }
 
-/* Seção de tags e botão */
-.cta-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: auto;
-}
-
-.tag-project {
+/* Tags tech */
+.project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
-
-.btn-project a {
-    display: block;
-    text-align: center;
-    padding: 0.7rem;
-    background-color: var(--blue);
-    color: var(--white);
-    border-radius: 5px;
+.tag {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    color: var(--gray);
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
 }
 
-.btn-project a:hover {
-    background-color: #0056b3;
+.project-featured:hover .tag,
+.project-card:hover .tag {
+    border-color: rgba(0, 123, 255, 0.3);
+}
+
+/* Overlay hover */
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-featured:hover .project-overlay,
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.overlay-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 1.1rem;
+    transform: translateY(8px);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-featured:hover .overlay-icon,
+.project-card:hover .overlay-icon {
+    transform: translateY(0);
+}
+
+/* Grid de projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-card-img {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.project-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card:hover .project-card-img img {
+    transform: scale(1.05);
+}
+
+.project-card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1.4rem 1.5rem;
+    gap: 0.4rem;
+}
+
+.project-card-info .project-name {
+    font-size: 1.25rem;
+}
+
+.project-card-info .project-desc {
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 /* CONTACT — Editorial */
