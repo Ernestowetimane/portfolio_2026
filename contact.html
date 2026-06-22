@@ -129,6 +129,21 @@
 
     <script>
         AOS.init();
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const text = `Olá, o meu nome é ${name}.\n\nEmail: ${email}\n\n${message}`;
+
+            const encoded = encodeURIComponent(text);
+            const whatsappURL = `https://wa.me/258856752762?text=${encoded}`;
+
+            window.open(whatsappURL, '_blank');
+        });
     </script>
 
 </body>
