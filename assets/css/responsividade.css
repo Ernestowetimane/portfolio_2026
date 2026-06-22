@@ -159,57 +159,27 @@
         justify-content: center;
     }
 
-    /*Contato*/
+    /*Contact - Editorial*/
     .contact {
-        border: 1px solid red;
-        width: 92%;
-        padding: 2rem 0;
-        height: auto;
+        padding: 4rem 0 3rem;
     }
 
     .container-contact {
-        width: 100%;
-        padding: 0rem 0rem 2rem 0rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 0 1.5rem;
+        gap: 3rem;
     }
 
-    .contact {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .container-contact {
-        width: 100%;
-        height: 100%;
-        padding: 2rem 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        flex-grow: 1;
+    .contact-title {
+        font-size: clamp(2.2rem, 5vw, 3.5rem);
     }
 
-    .content-contact {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-info {
         gap: 2rem;
-    }
-
-    .left-contact,
-    .right-contact {
-        width: 100%;
-    }
-
-    .left-contact {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
     }
 }
 
@@ -449,29 +419,17 @@
         width: 100%; 
     }
 
-    /*Contato*/
+    /*Contact - Editorial*/
     .contact {
-        width: 95%;
-        height: calc(100vh - 90px - 60px);
+        padding: 6rem 0 4rem;
     }
 
     .container-contact {
-        height: calc(100vh - 90px);
-    }
-    
-    .content-contact {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: calc(100vh - 90px);
+        padding: 0 2rem;
     }
 
-    .left-contact, .right-contact {
-        max-width: 48%;
-    }
-
-    .text-contact h1 {
-        font-size: 2.5rem;
+    .contact-grid {
+        gap: 6rem;
     }
 }
 
@@ -525,5 +483,39 @@
 
     .card-tech img {
         width: 50%;
+    }
+
+    /*Contact - Editorial Mobile*/
+    .contact {
+        padding: 3rem 0 2rem;
+        min-height: auto;
+    }
+
+    .container-contact {
+        padding: 0 1.2rem;
+        gap: 2.5rem;
+    }
+
+    .contact-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .contact-info {
+        gap: 1.8rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 2rem;
     }
 }

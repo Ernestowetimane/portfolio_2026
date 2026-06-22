@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/responsividade.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -56,56 +55,62 @@
     <!--Start Section Contact-->
     <section id="contact" class="contact">
         <div class="container-contact">
-            <div class="headline" data-aos="fade-up" data-aos-delay="100">
-                <span class="destaque">Vamos conversar</span>
-                <h1>Entre em Contato</h1>
+
+            <div class="contact-headline" data-aos="fade-up" data-aos-delay="100">
+                <span class="contact-label">Contacto</span>
+                <h1 class="contact-title">Vamos criar<br>algo <span class="destaque">incrível</span></h1>
             </div>
-            <div class="content-contact">
-                <div class="left-contact" data-aos="fade-right" data-aos-delay="200">
-                    <div class="text-contact">
-                        <h1>Pronto para transformar suas ideias em realidade?</h1>
-                        <p>Estou aqui para ajudar você a criar soluções digitais que impulsionam o crescimento do seu negócio. Entre em contato para discutirmos suas necessidades e como podemos alcançar seus objetivos juntos.</p>
+
+            <div class="contact-grid">
+
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                    <p class="contact-description">Tem um projeto em mente? Estou disponível para discutir como posso transformar a sua visão em realidade digital.</p>
+
+                    <div class="contact-details">
+                        <a href="mailto:wetimaneernestovasco@gmail.com" class="contact-detail-item">
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value">wetimaneernestovasco@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ernesto-vasco-wetimane-854857360/" target="_blank" class="contact-detail-item">
+                            <span class="detail-label">LinkedIn</span>
+                            <span class="detail-value">Ernesto Wetimane</span>
+                        </a>
                     </div>
-                    <div class="list-contact">
-                        <span class="destaque">Contate-me</span>
-                        <div class="container-list">
-                            <ul>
-                                <li><i class="fa-solid fa-envelope"></i> Email: wetimaneernestovasco@gmail.com</li>
-                                <li><i class="fa-solid fa-map-marker-alt"></i> Localização: Avenida do Trabalho - cidade de Maputo Moçambique</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="redes-sociais-contato">
-                        <span class="destaque">Redes Sociais:</span>
-                        <a href="https://github.com/Ernestowetimane" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/ernesto-vasco-wetimane-854857360/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/ernestojr.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                    <div class="contact-social">
+                        <a href="https://github.com/Ernestowetimane" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ernesto-vasco-wetimane-854857360/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ernestojr.dev/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-    
-                <div class="right-contact" data-aos="fade-left" data-aos-delay="300">
-                    <h2>Envie sua mensagem</h2>
-                    <form id="contact-form">
-                        <label for="name">Nome*</label>
-                        <input type="text" name="user_name" required>
-    
-                        <label for="whatsapp">WhatsApp*</label>
-                        <input type="tel" id="whatsapp" name="user_phone" required>
-    
-                        <label for="email">E-mail*</label>
-                        <input type="email" name="user_email" required>
-    
-                        <label for="company">Empresa (Opcional)</label>
-                        <input type="text" name="subject">
-    
-                        <label for="message">Mensagem*</label>
-                        <textarea rows="5" name="message" required placeholder="Descreva um pouco do seu projeto..."></textarea>
-    
-                        <button type="submit" class="btn">Enviar Mensagem</button>
-                        <p id="form-success" class="success-message">Sua mensagem foi enviada com sucesso!</p>
+
+                <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="300">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="user_name" id="name" required placeholder=" " autocomplete="name">
+                            <label for="name">Nome</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="user_email" id="email" required placeholder=" " autocomplete="email">
+                            <label for="email">Email</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" rows="5" required placeholder=" " autocomplete="off"></textarea>
+                            <label for="message">Mensagem</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="contact-btn">
+                            <span class="contact-btn-text">Enviar Mensagem</span>
+                            <span class="contact-btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </button>
+                        <p id="form-success" class="success-message">Mensagem enviada com sucesso!</p>
                     </form>
                 </div>
+
             </div>
+
         </div>
     </section>
     <!--End Section Contact-->
@@ -118,22 +123,12 @@
 
     <!--Scripts-->
     <script src="/assets/js/menu.js"></script>
-    <script src="assets/js/emailForm.js"></script>
     <script src="/assets/js/headerAnimation.js"></script>
-    <script src="/assets/js/scrollAnimation.js"></script>
-    <script src="/assets/js/imageScroll.js"></script>
-    <script src="assets/js/changePagesAnimation.js"></script>
+    <script src="/assets/js/changePagesAnimation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script>
         AOS.init();
-
-        // Máscara para o campo WhatsApp
-        document.getElementById('whatsapp').addEventListener('input', function (e) {
-            let value = e.target.value.replace(/\D/g, '');
-            value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
-            e.target.value = value;
-        });
     </script>
 
 </body>
